@@ -1,0 +1,30 @@
+<html>
+<head>
+  <script type="module" src="./module.js"></script>
+  <style>
+    div.status {
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+    }
+    span.error {
+      color: red;
+    }
+    span.ok {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <button id="run">Run</button>
+  <button id="solve">Solve</button>
+  <button id="simulateError">Simulate Error</button>
+  <input id="width" type="text" placeholder="Width" value="9">
+  <input id="height" type="text" placeholder="Height" value="6">
+  <br/>
+  <canvas></canvas>
+  <div class="status">
+    <span>Status : </span><span id="error" class="ok">OK.</span>
+  </div>
+</body>
+</html>
